@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <array>
-#include <mutex>
-#include <thread>
-#include <atomic>
-#include <chrono>
-#include <iostream>
+#include <sys/time.h>
 #include <string>
 #include <iomanip>
 #include <condition_variable>
-#include <vector>
-#include <future>
+#include <atomic>
+#include <chrono>
+#include <iostream>
+#include <mutex>
+#include <thread>
+
+using namespace std;
 
 std::mutex g_lockprint;
-constexpr  int no_of_philosophers = 5;
+constexpr  int no_of_philosophers = 7;
 
 class sync_channel
 {
@@ -105,8 +106,8 @@ public:
 
       do
       {
-        think();
-        eat();
+         think();
+         eat();
       } while (!setup.done);
    }
 
@@ -153,8 +154,8 @@ class table
          { 3, 3 },
          { 4, 4 },
          { 5, 1 },
-//         { 6, 6 },
-//         { 7, 1 },
+         { 6, 6 },
+         { 7, 1 },
       }
    };
 
@@ -166,8 +167,8 @@ class table
          { 3, "Descartes", setup, forks[2], forks[3] },
          { 4, "Kant",      setup, forks[3], forks[4] },
          { 5, "Nietzsche", setup, forks[4], forks[0] },
-//         { 6, "Hume",      setup, forks[5], forks[6] },
-//         { 7, "Russell",   setup, forks[6], forks[0] },
+         { 6, "Hume",      setup, forks[5], forks[6] },
+         { 7, "Russell",   setup, forks[6], forks[0] },
       }
    };
 
@@ -202,5 +203,5 @@ int main()
 {  
    dine();
 
-   exit(0);
+   return 0;
 }
