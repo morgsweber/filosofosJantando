@@ -192,7 +192,7 @@ void dine()
       table table;
 
       table.start();
-      std::this_thread::sleep_for(std::chrono::seconds(5));
+      std::this_thread::sleep_for(std::chrono::milliseconds(5));
       table.stop();
    }
 
@@ -201,7 +201,12 @@ void dine()
 
 int main()
 {  
+   auto t1 = chrono::high_resolution_clock::now();
    dine();
+   auto t2 = chrono::high_resolution_clock::now();
+
+   chrono::duration<double, milli> result = t2 - t1;
+   cout << "Execution time (ms): " << result.count() << "\n";
 
    return 0;
 }

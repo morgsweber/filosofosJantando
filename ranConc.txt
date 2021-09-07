@@ -1,0 +1,8 @@
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -c -o marius.o marius_version.cpp -lm -lpthread  -lpthread
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -o marius marius.o -lm -lpthread  -lpthread
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -c -o seq.o sequential_diner.cpp -lm -lpthread 
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread   -o seq seq.o -lm -lpthread 
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -c -o pipeline.o pipeline_diner.cpp -lm -lpthread  -lpthread
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -o pipeline pipeline.o -lm -lpthread  -lpthread
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -c -o farm.o farm_diner.cpp -lm -lpthread  -lpthread
+g++   -Wall -std=c++1y -pthread -DNODBG -DNO_CMAKE_CONFIG  -O3 -finline-functions    -I. -I build/libraries/ 	   -L. -pthread  -o farm farm.o -lm -lpthread  -lpthread

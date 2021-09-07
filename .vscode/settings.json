@@ -1,0 +1,8 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "condition_variable": "cpp",
+        "chrono": "cpp",
+        "iostream": "cpp"
+    }
+}
