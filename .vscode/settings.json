@@ -1,8 +1,0 @@
-{
-    "makefile.extensionOutputFolder": "./.vscode",
-    "files.associations": {
-        "string": "cpp",
-        "iomanip": "cpp",
-        "condition_variable": "cpp"
-    }
-}

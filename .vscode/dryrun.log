@@ -1,5 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/andre/Documents/PUCRS/Fund_Paralelo/filosofosJantando'
-make: Nothing to be done for 'all'.
-make: Leaving directory '/home/andre/Documents/PUCRS/Fund_Paralelo/filosofosJantando'
- 

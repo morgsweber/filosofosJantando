@@ -11,8 +11,8 @@ LDFLAGS              = $(DIS) -L. -pthread
 INCS                 = -I build/libraries/ 	
 LIBS                 = -lm -lpthread 
 INCLUDES             = -I. $(INCS) 
-TARGET               = farm #seq pipeline   
-SOURCES		     =  farm_diner.cpp # sequential_diner.cpp diner_pipeline.cpp  
+TARGET               = marius seq pipeline farm   
+SOURCES		     = marius_version.cpp sequential_diner.cpp pipeline_diner.cpp farm_diner.cpp  
 SRC = .
 INC = .
 
@@ -20,13 +20,17 @@ INC = .
 
 all:$(TARGET)
 
-#seq: sequential_diner.cpp 
-#	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o seq.o sequential_diner.cpp $(LIBS)
-#	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS)  -o seq seq.o $(LIBS)
+marius:
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o marius.o marius_version.cpp $(LIBS) -lpthread
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o marius marius.o $(LIBS) -lpthread
 
-#pipeline:
-#	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o pipeline.o diner_pipeline.cpp $(LIBS) -lpthread
-#	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o pipeline pipeline.o $(LIBS) -lpthread
+seq: sequential_diner.cpp 
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o seq.o sequential_diner.cpp $(LIBS)
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS)  -o seq seq.o $(LIBS)
+
+pipeline:
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o pipeline.o pipeline_diner.cpp $(LIBS) -lpthread
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o pipeline pipeline.o $(LIBS) -lpthread
 
 farm:
 	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o farm.o farm_diner.cpp $(LIBS) -lpthread
