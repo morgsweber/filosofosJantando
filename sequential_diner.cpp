@@ -83,8 +83,13 @@ void dine() {
          j = 0;
       }
       philosophers.emplace_back(move(philosopher(i, names.at(i), chopstiks.at(i), chopstiks.at(j))));
-      eat(philosophers.at(i));
    }
+   for(int j = 0; j < 10; j++) {
+      for(int i = 0; i < 5; i++, j++) {
+         eat(philosophers.at(i));
+      }
+   }
+   
 };
 
 int main() {
