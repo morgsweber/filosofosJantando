@@ -16,15 +16,13 @@
  * ============================================================================
  */
 
-
 #include <iostream>
 #include <thread>
 #include <vector>
 #include <chrono>
 #include <mutex>
 
-
-
+using namespace std;
 using std::thread;
 using std::cout;
 using std::endl;
@@ -37,7 +35,7 @@ using std::lock;
 using std::lock_guard;
 using std::adopt_lock;
 
-
+mutex cout_lock;
 
 /**
  * Class that implements a dinner Table with all the forks resources
@@ -89,7 +87,7 @@ class Philosopher {
      */
     void exist ()
     {
-      while (true) {
+      for (int i = 0; i < 10; i++) {
 
         think();
         eat();
@@ -101,8 +99,10 @@ class Philosopher {
      */
     void think ()
     {
+      cout_lock.lock();
       cout << "Philosopher " << philosopher_id << " thinking.." << endl;
-      sleep_for(milliseconds(rand() % 5000));
+      //sleep_for(milliseconds(rand() % 5000));
+      cout_lock.unlock();
     }
 
     /**
@@ -117,11 +117,14 @@ class Philosopher {
      */
     void eat ()
     {
+      
       int left = philosopher_id;
       int right = (philosopher_id + 1) % table.forks.size();
 
+      cout_lock.lock();
       cout << "Philosopher " << philosopher_id << " taking forks.." << endl;
-
+      cout_lock.unlock();
+      
       /* Locks boths mutexes without any deadlock */
       lock(table.forks[left], table.forks[right]);
 
@@ -129,10 +132,12 @@ class Philosopher {
       lock_guard<mutex> left_fork(table.forks[left], adopt_lock);
       lock_guard<mutex> right_fork(table.forks[right], adopt_lock);
 
+      cout_lock.lock();
       cout << "Philosopher " << philosopher_id << " eating.." << endl;
-      sleep_for(milliseconds(rand() % 10000));
+      //sleep_for(milliseconds(rand() % 10000));
 
       cout << "Philosopher " << philosopher_id << " releasing fork.." << endl;
+      cout_lock.unlock();
     }
 };
 
@@ -146,6 +151,7 @@ main (int argc, char* argv[])
 
   vector<thread *> threads(5);
 
+  auto t1 = chrono::high_resolution_clock::now();
   for(int i=0; i < 5; i++) {
 
     Philosopher* philosopher = new Philosopher(i, table);
@@ -156,6 +162,11 @@ main (int argc, char* argv[])
 
     threads[i]->join();
   }
+  auto t2 = chrono::high_resolution_clock::now();
+  chrono::duration<double, milli> result = t2 - t1;
+
+
+  cout << "Execution Time: " << result.count() << "\n";
 
   return EXIT_SUCCESS;
 }
