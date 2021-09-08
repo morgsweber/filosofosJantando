@@ -11,8 +11,8 @@ LDFLAGS              = $(DIS) -L. -pthread
 INCS                 = -I build/libraries/ 	
 LIBS                 = -lm -lpthread 
 INCLUDES             = -I. $(INCS) 
-TARGET               = marius seq pipeline farm   
-SOURCES		     = marius_version.cpp sequential_diner.cpp pipeline_diner.cpp farm_diner.cpp  
+TARGET               = marius seq pipeline farm gustavo   
+SOURCES		     = marius_version.cpp sequential_diner.cpp pipeline_diner.cpp farm_diner.cpp gustavo_version.cpp  
 SRC = .
 INC = .
 
@@ -35,6 +35,10 @@ pipeline:
 farm:
 	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o farm.o farm_diner.cpp $(LIBS) -lpthread
 	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o farm farm.o $(LIBS) -lpthread
+
+gustavo:
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -c -o gustavo.o gustavo_version.cpp $(LIBS) -lpthread
+	$(CXX)  $(CXXFLAGS) $(OPTIMIZE_FLAGS)  $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o gustavo gustavo.o $(LIBS) -lpthread
 
 clean:
 	rm -f *.o
