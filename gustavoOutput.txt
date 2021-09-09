@@ -1,0 +1,203 @@
+THE PHILOSOPHERS DINNER
+
+Philosopher 0 thinking..
+Philosopher 0 taking forks..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 0 thinking..
+Philosopher 0 taking forks..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 0 thinking..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 0 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 0 thinking..
+Philosopher 0 taking forks..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 0 thinking..
+Philosopher 0 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 0 thinking..
+Philosopher 0 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 0 thinking..
+Philosopher 0 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 0 thinking..
+Philosopher 4 thinking..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 1 thinking..
+Philosopher 3 thinking..
+Philosopher 0 taking forks..
+Philosopher 4 taking forks..
+Philosopher 2 thinking..
+Philosopher 1 taking forks..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 2 thinking..
+Philosopher 2 taking forks..
+Philosopher 2 eating..
+Philosopher 2 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 3 thinking..
+Philosopher 3 taking forks..
+Philosopher 3 eating..
+Philosopher 3 releasing fork..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 0 thinking..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 0 taking forks..
+Philosopher 1 taking forks..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 1 thinking..
+Philosopher 1 taking forks..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 0 thinking..
+Philosopher 1 eating..
+Philosopher 1 releasing fork..
+Philosopher 0 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 0 eating..
+Philosopher 0 releasing fork..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Philosopher 4 thinking..
+Philosopher 4 taking forks..
+Philosopher 4 eating..
+Philosopher 4 releasing fork..
+Execution Time: 0.745849
